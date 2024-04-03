@@ -1,8 +1,4 @@
 ---
-title: Centos更换yum源为阿里云源
-date: 2023-07-18 17:10:33
-categories: 
-- 运维部署
 tags:
 - centos
 - yum

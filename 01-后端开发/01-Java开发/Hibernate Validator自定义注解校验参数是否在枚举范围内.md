@@ -1,4 +1,11 @@
+---
+tags:
+- Hibernate Validator
+- Springboot
+---
+
 ## 前言
+
 Hibernate Validator是一个基于Java的验证框架，它是Java Bean验证API（JSR 380）的实现，并提供了一套全面的验证约束和功能，用于验证Java对象。Hibernate Validator允许自定义注解来定义验证约束。通过自定义注解，可以根据特定的业务需求创建自定义的验证规则，并将其应用于Java类的属性、方法或类本身。本文主要介绍如何基于自定义注解实现校验参数在枚举范围内，对于Hibernate Validator本身不再作过多介绍。
 ## 实现步骤
 ### 创建新注解
