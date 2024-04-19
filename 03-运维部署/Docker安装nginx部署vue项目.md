@@ -1,3 +1,9 @@
+---
+tags:
+- Docker
+- Nginx
+---
+
 ## 前言
 本文主要介绍如何通过docker安装nginx。
 
