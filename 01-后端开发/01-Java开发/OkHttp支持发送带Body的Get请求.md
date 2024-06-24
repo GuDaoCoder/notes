@@ -7,13 +7,13 @@ tags:
 
 ## 前言
 
+http协议不推荐Get请求带Body，可能会带来一些未知问题，但是也没有明确禁止这种行为。<!-- more -->
+
 在[http协议文档](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1)中4.3.1一节中有对于Get请求带Body的说明。
 
 ```
 A payload within a GET request message has no defined semantics;sending a payload body on a GET request might cause some existing mplementations to reject the request.
 ```
-
-在网络上检索相关问题，基本可以得出一个结论：http协议不推荐Get请求带Body，可能会带来一些未知问题，但是也没有明确禁止这种行为。
 
 ## OkHttp本身禁止发送带Body的Get请求
 
