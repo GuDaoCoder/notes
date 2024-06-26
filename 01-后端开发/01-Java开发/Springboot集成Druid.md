@@ -1,7 +1,7 @@
 ---
 tags:
-- springboot
-- druid
+- Springboot
+- Druid
 ---
 
 ## 前言
