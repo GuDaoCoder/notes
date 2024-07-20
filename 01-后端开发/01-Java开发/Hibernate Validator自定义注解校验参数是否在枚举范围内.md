@@ -168,5 +168,5 @@ public enum Sex {
 ```
 ### 测试
 通过接口工具测试，
-![img](./asserts/Hibernate Validator自定义注解校验参数是否在枚举范围内/20240329175627-20240720215919212.png)
+![img](./asserts/Hibernate Validator自定义注解校验参数是否在枚举范围内/20240329175627.png)
 
