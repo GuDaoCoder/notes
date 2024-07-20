@@ -90,7 +90,7 @@ spring:
 - 如果需要Spring监控，除了配置aop-patterns，还需要加入**spring-boot-starter-aop依赖，**否则Spring监控页面空白**。**
 ## 查看监控页面
 访问http://ip:port/druid/login.html，输入账号密码，如果数据源页面各项参数和配置的参数一样，则说明集成成功。
-![druid](http://cdn.road4code.com/image-bed/20240329175433.png)
+![img](./asserts/Springboot集成Druid/20240329175433.png)
 调用接口，查看SQL监控和Spring监控页面是否正常显示。
 ## 去除广告
 监控页面下方有阿里云的广告，可以通过代码去除。

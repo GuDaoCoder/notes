@@ -19,15 +19,15 @@ A payload within a GET request message has no defined semantics;sending a payloa
 
 OkHttp严格遵守http协议，禁止发送带Body的Get请求。在OkHttp中构建Request的Builder类并没有提供带参数的get方法。
 
-![image-20240621181742957](http://cdn.road4code.com/image-bed/20240621181743.png)
+![img](./asserts/OkHttp支持发送带Body的Get请求/20240621181743.png)
 
 而当我们试图通过method方法去构建带Body的Get请求时则是会直接抛出异常。
 
-![image-20240621181918449](http://cdn.road4code.com/image-bed/20240621181918.png)
+![img](./asserts/OkHttp支持发送带Body的Get请求/20240621181918.png)
 
 在Github上有人提了相关的[Issue](https://github.com/square/okhttp/issues/3154)，官方对此作出了回应表示不会修改，顺便还嘲讽了下Elasticsearch(*^▽^*)。
 
-![image-20240624104437452](http://cdn.road4code.com/image-bed/20240624104437.png)
+![img](./asserts/OkHttp支持发送带Body的Get请求/20240624104437.png)
 
 ## OkHttp支持发送带Body的Get请求
 
@@ -89,11 +89,11 @@ public class FixGetWithBody {
 
 当然，到这里还没有结束。虽然我们绕过了发送的校验，但是OkHttp在处理请求返回时也会根据请求方式和是否有Body作出不同的处理。OkHttp源码的CallServerInterceptor类47行可以看到相关的代码。
 
-![image-20240624105414247](http://cdn.road4code.com/image-bed/20240624105414.png)
+![img](./asserts/OkHttp支持发送带Body的Get请求/20240624105414.png)
 
 万幸的是这次OkHttp在第43行提供了个可以修改的入口。
 
-![image-20240624105644486](http://cdn.road4code.com/image-bed/20240624105644.png)
+![img](./asserts/OkHttp支持发送带Body的Get请求/20240624105644.png)
 
 这里提供了requestHeadersStart和requestHeadersEnd两个事件，我们需要在requestHeadersEnd事件中根据之前添加的Header标记选择将Request对象中的method再次通过反射修改回Post。
 

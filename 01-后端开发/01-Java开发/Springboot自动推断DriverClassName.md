@@ -83,7 +83,7 @@ class OceanBaseWithoutDriverClassNameErrorTests {
 
 但是这次Springboot在启动过程中就直接报错了，并提示无法推断出一个合适驱动类。
 
-![image-20240626114629252](http://cdn.road4code.com/image-bed/20240626114629.png)
+![img](./asserts/Springboot自动推断DriverClassName/20240626114629.png)
 
 ### Springboot推断Driver Class源码分析
 

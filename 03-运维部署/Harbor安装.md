@@ -16,7 +16,7 @@ Harbor是一个用于存储和分发Docker镜像的企业级Registry服务器，
 ## 安装步骤
 ### 下载安装包
 到[Harbor官方地址](https://github.com/goharbor/harbor/releases)下载最新版安装包。
-![tgz](http://cdn.road4code.com/image-bed/20240329180202.png)
+![img](./asserts/Harbor安装/20240329180202.png)
 
 ### 解压安装包
 ```shell
@@ -67,9 +67,9 @@ harbor_admin_password: Harbor12345
 ./install.sh --with-trivy
 ```
 当出现下图信息即表示安装成功。
-![install-success](http://cdn.road4code.com/image-bed/20240329180230.png)
+![img](./asserts/Harbor安装/20240329180230.png)
 
 ### 访问UI界面。
 打开浏览器访问，ip为操作系统ip地址，端口为配置文件中http或https配置的端口。用户名为admin，密码为配置文件中配置的密码。
-![homePage](http://cdn.road4code.com/image-bed/20240329180242.png)
-![project](http://cdn.road4code.com/image-bed/20240329180252.png)
+![img](./asserts/Harbor安装/20240329180242.png)
+![img](./asserts/Harbor安装/20240329180252.png)

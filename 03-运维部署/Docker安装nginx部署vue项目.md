@@ -51,13 +51,11 @@ docker run -d  --name nginx -p 80:80 -p 443:443 -v /home/docker/nginx/nginx.conf
 
 访问网页确认nginx正常启动
 
-![image-20240409225821537](http://cdn.road4code.com/image-bed/20240409225821.png)
+![img](./asserts/Docker安装nginx部署vue项目/20240409225821.png)
 
 ### 部署vue页面
 
 将vue项目打包后的静态文件上传到之前的/home/docker/nginx/html目录下
 
-
-
-![image-20240409230231190](http://cdn.road4code.com/image-bed/20240409230231.png)
+![img](./asserts/Docker安装nginx部署vue项目/20240409230231.png)
 
